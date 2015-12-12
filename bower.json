@@ -1,0 +1,20 @@
+{
+  "name": "norfolkcounty-ca",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "git://github.com/twbs/bootstrap.git#v4-dev",
+    "modernizr": "~2.8.1"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "scss/_bootstrap.scss",
+        "js/dist/*.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "~3.4.2",
+    "mocha": "~2.3.4"
+  }
+}
