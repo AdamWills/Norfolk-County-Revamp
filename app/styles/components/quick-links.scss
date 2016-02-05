@@ -1,0 +1,67 @@
+.container-quick-links {
+  // margin-top: 2rem;
+  background-color: $brand-green;
+  border-top: 1px solid #fff;
+  width: 90vw;
+  margin-right: 2px; // fix for sticking out a bit.
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: $breakpoint-mobile-nav-min) {
+    width: 60vw
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+.quick-links {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0rem;
+  margin-left: 0;
+  @media screen and (min-width: $breakpoint-mobile-nav-min) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  width: 100%;
+
+  li {
+    @media screen and (min-width: $breakpoint-mobile-nav-min) {
+      width: 25%;
+    }
+
+
+    &:first-of-type {
+      //text-align: left;
+    }
+
+    &:last-of-type {
+      //text-align: right;
+    }
+
+    a {
+      display: block;
+      padding: 0.5rem 0;
+    }
+  }
+
+  a {
+    color: #fff;
+    padding: 1rem 0;
+    display: inline-block;
+    @media screen and (min-width: $breakpoint-mobile-nav-min) {
+      padding: 0;
+    }
+  }
+}

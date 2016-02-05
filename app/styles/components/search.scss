@@ -1,0 +1,93 @@
+.container-search {
+  padding: 2rem 0;
+  max-width: 90vw;
+
+  @media screen and (min-width: $breakpoint-mobile-nav-min) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60vw;
+  }
+}
+
+.site-search {
+  //margin-top: -9rem; // height of banner
+  @media screen and (max-width: $breakpoint-mobile-nav-max) {
+    .input-group {
+      display: block;
+    }
+  }
+}
+
+.gsc-input, .gsib_a {
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+.gsib_b {
+  background-color: #fff;
+}
+
+td.gsib_a, td.gsib_b {
+  border: 1px solid $brand-green;
+}
+td.gsib_a {
+  border-right: none;
+}
+td.gsib_b {
+  border-left: none;
+}
+
+.gsc-input-box {
+  border: none !important;
+  height: auto !important;
+  background: none !important;
+
+}
+
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+  border: none;
+}
+
+.gsc-search-button {
+  border: none !important;
+}
+
+.btn-search {
+  @extend .btn-primary;
+  height: 52px;
+}
+
+.gsc-search-button {
+  background-color: $brand-green;
+}
+.gsc-search-button-v2 {
+  box-sizing: content-box;
+  margin: 4px !important;
+  background: transparent !important;
+}
+
+input.gsc-input {
+  padding: 0.5rem 1rem !important;
+  font-size: 1.5rem !important;
+  height: auto !important;
+  background: #fff !important;
+  width: 100%;
+  display: block;
+  margin: 0 !important;
+  @media screen and (min-width: $breakpoint-mobile-nav-min) {
+    font-size: 2rem;
+    width: 36rem;
+  }
+}
+
+.site-search__submit {
+  font-size: 1.5rem;
+  display: block;
+  width: 100%;
+  @media screen and (min-width: $breakpoint-mobile-nav-min) {
+    height: 66px;
+    padding: 0 2rem;
+  }
+}

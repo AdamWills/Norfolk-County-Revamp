@@ -1,0 +1,58 @@
+.news-ticker {
+  background-color: $brand-green;
+  color: #fff;
+  display: flex;
+  overflow-x: hidden;
+  width: 90vw;
+  margin: 0 auto;
+  height: 2rem;
+  @media screen and (min-width: $breakpoint-mobile-nav-min) {
+    width: 60vw;
+  }
+}
+
+.news-ticker__controls {
+    button {
+     outline: none;
+     border: 0px solid;
+     background: transparent;
+  }
+
+  .ytp-play-button {
+     fill: #fff;
+     opacity: 0.85;
+     margin-top: -2px;
+     padding: 0;
+     display: inline;
+  }
+
+  .ytp-play-button:hover {
+     cursor: pointer;
+     opacity: 1;
+  }
+}
+
+.news-ticker__feed {
+  width: 100%;
+  position: relative;
+  span {
+    position: absolute;
+    top: 4px;
+    left: 1rem;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 7.5rem;
+  }
+
+  li {
+    // display: inline-block;
+    // width: 100%;
+    line-height: 2rem;
+  }
+
+  a {
+    color: #fff;
+  }
+}
