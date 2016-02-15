@@ -99,6 +99,15 @@ $(".ytp-play-button").on('click', function() {
    }).get(0).beginElement();
 });
 
+$('body').vegas({
+    slides: [
+        { src: 'images/bg-1.jpg' },
+        { src: 'images/bg-2.jpg' },
+        { src: 'images/bg-3.jpg' }
+    ],
+		delay: 10000
+});
+
 setUpNewsFeed();
 setUpNavigation();
 setUpMobileNavButton();
