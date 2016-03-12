@@ -1,6 +1,6 @@
 .banner {
-  background-color: rgba(255,255,255,0.6);
-  border-bottom: 3px solid $brand-green;
+  background-color: $brand-green;
+  border-bottom: 3px solid #fff;
 
   @media screen and (min-width: $breakpoint-mobile-nav-min) {
     height: 7rem;
@@ -113,9 +113,10 @@
     }
 
     & > a:hover, & > a:focus {
-      background-color: rgba(255,255,255,0.70);
+      background-color: #fff;
       transition: all 0.3s ease-in-out;
       text-decoration: none;
+      color: $brand-green;
 
     }
 
@@ -124,6 +125,8 @@
         background-color: rgba(255,255,255,1);
       }
     }
+
+
   }
 
   a {
@@ -134,7 +137,7 @@
     font-size: 1.6rem;
     color: #fff;
     @media screen and (min-width: $breakpoint-mobile-nav-min) {
-      color: #666;
+      color: #fff;
     }
 
 
