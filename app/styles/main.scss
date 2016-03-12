@@ -37,7 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   @media screen and (min-width: $breakpoint-mobile-nav-min) {
-    background: url(../images/bg.jpeg) no-repeat;
+    background: #fff;
     background-size: cover;
     background-position: center;
   }

@@ -99,14 +99,13 @@ $(".ytp-play-button").on('click', function() {
    }).get(0).beginElement();
 });
 
-$('body').vegas({
-    slides: [
-        { src: 'images/bg-1.jpg' },
-        { src: 'images/bg-2.jpg' },
-        { src: 'images/bg-3.jpg' }
-    ],
-		delay: 10000
-});
+var slides= [
+    { src: 'images/bg-1.jpg' },
+    { src: 'images/bg-2.jpg' },
+    { src: 'images/bg-3.jpg' }
+];
+var slide = slides[Math.floor(Math.random()*slides.length)];
+$('body').css('background-image','url(' + slide.src + ')');
 
 setUpNewsFeed();
 setUpNavigation();
