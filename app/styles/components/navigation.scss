@@ -30,6 +30,12 @@
   padding: 0.75rem 1rem;
   color: #fff;
 
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    border-color: $brand-gold;
+  }
+
   @media screen and (min-width: $breakpoint-mobile-nav-min) {
     display: none;
   }
@@ -163,6 +169,11 @@
     position: absolute;
     top: 0.5rem;
     right: 1rem;
+    display: none;
+      @media screen and (min-width: $breakpoint-mobile-nav-min) {
+        display: inherit;
+      }
+
 
     &:hover, &:focus {
       color: $brand-green;
