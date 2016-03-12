@@ -1,14 +1,13 @@
 .container-quick-links {
   // margin-top: 2rem;
   background-color: $brand-green;
-  border-top: 1px solid #fff;
   width: 90vw;
   margin-right: 2px; // fix for sticking out a bit.
   display: flex;
   justify-content: center;
   margin: 0 auto;
   padding: 1rem;
-  margin-bottom: 2rem;
+  border-bottom: 2px solid #fff;
 
   @media screen and (min-width: $breakpoint-mobile-nav-min) {
     width: 60vw
